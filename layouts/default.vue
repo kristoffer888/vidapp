@@ -9,6 +9,7 @@
 
 <script>
 import AppHeader from "../components/AppHeader";
+
 export default {
   components: {
     AppHeader
@@ -35,7 +36,7 @@ body, html {
   justify-content: center;
   font-size: 1rem;
   line-height: 1.6;
-  background: #1c1c1c;
+  background: #0e0e0e;
   color: white;
 }
 
@@ -47,6 +48,13 @@ body, html {
 #__layout {
   width: 100%;
   height: 100%;
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .app {
@@ -99,11 +107,13 @@ hr {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
   background: #535353;
 }
+
 label.icon {
   margin: 0;
   border-radius: 5px 0 0 5px;
   width: 46px;
 }
+
 .icon {
   display: inline-block;
   padding: 9.3px 15px;
@@ -112,21 +122,37 @@ label.icon {
   color: #535353;
   text-align: center;
 }
+
 button {
   display: inline-block;
-  background: #535353;
   color: white;
-  border-radius: 5px;
-  width: 100%;
-  padding: 10px 0;
-  margin: 10px auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background: none;
+  margin: 5px;
   border: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 }
-button:hover {
+
+.hostbut {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.hostbut:hover {
+  color: #a4a4a4;
+}
+
+.episbut {
+  background: #535353;
+}
+
+.episbut:hover {
   background: #7c7c7c;
 }
+
 .btn-block {
   margin-top: 10px;
   text-align: center;
@@ -138,21 +164,24 @@ button:hover {
   align-items: center;
   margin-bottom: 2rem;
 }
+
 .header .title {
   font-size: 3rem;
 }
-.header ul {
-  display: flex;
-}
+
 .header a {
   display: inline-block;
-  background: lightsalmon;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
+  background: #535353;
+  margin: 5px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.header input{
+.header input {
   padding: 15px;
   border-radius: 20px;
   width: 450px;
@@ -169,18 +198,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.container {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.contentContainer{
-background-color: #535353;
-  height: 200px;
 }
 
 table {

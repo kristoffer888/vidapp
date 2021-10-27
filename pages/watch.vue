@@ -62,7 +62,7 @@ export default {
         }
       }
       try {
-        const res = await this.$axios.get('https://api.videovard.sx/v2/api/file/list?key=623qroxdsftzw5nijhi&fld_id=mljkf9oaml', config);
+        const res = await this.$axios.get('https://api.videovard.sx/v2/api/folder/list?key=623qroxdsftzw5nijhi', config);
         this.videos = res.data.result.files
       } catch (err) {
         console.log(err)
